@@ -1,5 +1,8 @@
 package strategy;
 
+import strategy.behaviour.fly.impl.FlyNoWay;
+import strategy.behaviour.quack.impl.QuackLoudly;
+
 public class RedHeadDuck extends Duck {
 	
 	RedHeadDuck(){
