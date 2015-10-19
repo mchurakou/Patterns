@@ -1,4 +1,6 @@
-package observer;
+package observer.observers;
+
+import observer.observable.Subject;
 
 public class CurrentCondition implements Observer {
 	private Subject subject;

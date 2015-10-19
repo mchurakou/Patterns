@@ -1,6 +1,8 @@
-package observer;
+package observer.observers;
 
-public class StatisticDisplay implements Observer{
+import observer.observable.Subject;
+
+public class StatisticDisplay implements Observer {
 	
 	private Subject subject;
 	public StatisticDisplay(Subject s){

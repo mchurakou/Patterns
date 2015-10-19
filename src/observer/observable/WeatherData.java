@@ -1,11 +1,13 @@
-package observer;
+package observer.observable;
+
+import observer.observers.Observer;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
 
-public class WeatherData implements Subject{
+public class WeatherData implements Subject {
 	
 	private int humidity;
 	private int pressure;
@@ -33,18 +35,13 @@ public class WeatherData implements Subject{
 	}
 
 	public void removeObserver(Observer o) {
-		int i = observers.indexOf(o);
-		if (i >= 0)
-			observers.remove(i);
-		
+		observers.remove(o);
 	}
 
 	
 	public void notifyObservers() {
-		for (int i = 0; i < observers.size(); i++){
-			Observer o = observers.get(i);
-			o.update(temperature,  humidity, pressure);
-		}
+		observers.forEach(x -> x.update(temperature,  humidity, pressure));
+
 		
 	}
 }
