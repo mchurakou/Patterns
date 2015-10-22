@@ -1,4 +1,4 @@
-package factory;
+package factory_method.pizza;
 
 public class CHPepperoniPizza extends Pizza {
 
@@ -6,7 +6,7 @@ public class CHPepperoniPizza extends Pizza {
 		name = "CH cheese pizza";
 		dough = "CH dough";
 		sauce = "CH souce";
-		toppings.add("CH ping");
+		toppings.add("CH topping");
 	}
 
 }

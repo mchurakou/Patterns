@@ -1,14 +1,14 @@
-package factory;
+package factory_method.pizza;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public abstract class  Pizza {
-	String name;
-	String dough;
-	String sauce;
-	List<String> toppings = new ArrayList<String>();
-	 void prepare(){
+	protected String name;
+	protected String dough;
+	protected String sauce;
+	protected List<String> toppings = new ArrayList<String>();
+	public void prepare(){
 		System.out.println("prepare " + name);
 		for (String top : toppings){
 			System.out.println(top);

@@ -1,4 +1,4 @@
-package factory;
+package factory_method.pizza;
 
 public class NYPepperoniPizza extends Pizza {
 

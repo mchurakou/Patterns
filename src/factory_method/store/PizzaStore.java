@@ -1,4 +1,6 @@
-package factory;
+package factory_method.store;
+
+import factory_method.pizza.Pizza;
 
 public abstract class PizzaStore {
 	

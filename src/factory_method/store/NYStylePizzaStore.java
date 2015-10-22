@@ -1,4 +1,8 @@
-package factory;
+package factory_method.store;
+
+import factory_method.pizza.NYCheesePizza;
+import factory_method.pizza.NYPepperoniPizza;
+import factory_method.pizza.Pizza;
 
 public class NYStylePizzaStore extends PizzaStore {
 
