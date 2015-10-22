@@ -2,14 +2,13 @@ package decorator;
 
 public class Mocha extends CondimentDecorator {
 
-	private Beverage b;
-	
-	public Mocha(Beverage b){
-		this.b = b;
+
+	public Mocha(Beverage b) {
+		super(b);
 	}
-	
+
 	double cost() {
-		return 1.1 * b.cost();
+		return 1.1 + b.cost();
 	}
 
 	@Override
