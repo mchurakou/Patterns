@@ -1,6 +1,6 @@
 package singleton;
 
-public class Singleton {
+public final class Singleton {
 	private volatile static Singleton instance;
 	
 	private Singleton(){
@@ -10,7 +10,9 @@ public class Singleton {
 	public static Singleton getInstance(){
 		if (instance == null){
 			synchronized (Singleton.class){
-				instance = new Singleton();
+				if (instance == null) {
+					instance = new Singleton();
+				}
 			}
 		}
 		
