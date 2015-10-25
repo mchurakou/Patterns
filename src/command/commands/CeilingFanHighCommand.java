@@ -1,6 +1,5 @@
-package command;
-import command.CeilingFan;
-import command.Command;
+package command.commands;
+import command.reciver.CeilingFan;
 
 
 public class CeilingFanHighCommand implements Command {

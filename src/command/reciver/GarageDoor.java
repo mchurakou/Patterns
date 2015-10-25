@@ -1,4 +1,4 @@
-package command;
+package command.reciver;
 
 public class GarageDoor {
 	public void up(){

@@ -1,5 +1,11 @@
 package command;
 
+import command.commands.*;
+import command.invoker.RemoteControl;
+import command.reciver.CeilingFan;
+import command.reciver.GarageDoor;
+import command.reciver.Light;
+
 public class Run {
 
 	/**

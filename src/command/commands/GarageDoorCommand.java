@@ -1,4 +1,6 @@
-package command;
+package command.commands;
+
+import command.reciver.GarageDoor;
 
 public class GarageDoorCommand implements Command {
 

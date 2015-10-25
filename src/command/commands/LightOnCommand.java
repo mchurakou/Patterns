@@ -1,4 +1,6 @@
-package command;
+package command.commands;
+
+import command.reciver.Light;
 
 public class LightOnCommand implements Command {
 	private Light light;

@@ -1,4 +1,7 @@
-package command;
+package command.invoker;
+
+import command.commands.Command;
+import command.commands.NoCommand;
 
 public class RemoteControl {
 	Command[] onCommands;
