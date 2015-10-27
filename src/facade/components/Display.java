@@ -1,4 +1,4 @@
-package facade;
+package facade.components;
 
 public class Display {
 	public void on(){

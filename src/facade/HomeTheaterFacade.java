@@ -1,5 +1,8 @@
 package facade;
 
+import facade.components.Display;
+import facade.components.Sound;
+
 public class HomeTheaterFacade {
 	private Display display;
 	private Sound sound;

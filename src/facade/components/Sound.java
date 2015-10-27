@@ -1,4 +1,4 @@
-package facade;
+package facade.components;
 
 public class Sound {
 	public void on(){

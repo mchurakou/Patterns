@@ -1,5 +1,8 @@
 package facade;
 
+import facade.components.Display;
+import facade.components.Sound;
+
 public class Run {
 
 	/**
