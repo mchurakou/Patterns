@@ -1,5 +1,8 @@
 package adapter;
 
+import adapter.duck.Duck;
+import adapter.turkey.Turkey;
+
 public class TurkeyAdapter implements Duck {
 
 	private Turkey turkey;
@@ -14,7 +17,10 @@ public class TurkeyAdapter implements Duck {
 
 	@Override
 	public void fly() {
-		turkey.fly();
+		for (int i = 0; i < 5; i++) {
+			turkey.fly();
+		}
+
 
 	}
 
