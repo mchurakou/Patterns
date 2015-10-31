@@ -1,6 +1,16 @@
 package iterator;
 
 public class MenuItem {
+	@Override
+	public String toString() {
+		return "MenuItem{" +
+				"name='" + name + '\'' +
+				", description='" + description + '\'' +
+				", vegeterian=" + vegeterian +
+				", price=" + price +
+				'}';
+	}
+
 	private String name;
 	private String description;
 	private boolean vegeterian;
