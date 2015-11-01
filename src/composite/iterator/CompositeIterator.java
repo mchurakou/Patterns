@@ -1,4 +1,7 @@
-package composite;
+package composite.iterator;
+
+import composite.Menu;
+import composite.MenuComponent;
 
 import java.util.Iterator;
 import java.util.Stack;
@@ -28,8 +31,8 @@ public class CompositeIterator implements Iterator {
 	@Override
 	public Object next() {
 		if(hasNext()){
-			Iterator iterator = (Iterator) stack.peek();
-			MenuComponent component = (MenuComponent) iterator.next();
+			Iterator<MenuComponent> iterator = (Iterator) stack.peek();
+			MenuComponent component = iterator.next();
 			if  (component instanceof Menu){
 				stack.push(component.createIterator());
 			}
@@ -39,12 +42,6 @@ public class CompositeIterator implements Iterator {
 		}
 	}
 
-	@Override
-	public void remove() {
-		// TODO Auto-generated method stub
-		
-	}
-	
 	
 
 }

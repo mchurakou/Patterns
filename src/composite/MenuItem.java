@@ -1,5 +1,7 @@
 package composite;
 
+import composite.iterator.NullIterator;
+
 import java.util.Iterator;
 
 
