@@ -1,4 +1,6 @@
-package condition;
+package state.states;
+
+import state.GumballMachine;
 
 import java.util.Random;
 

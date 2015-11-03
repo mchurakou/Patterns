@@ -1,9 +1,11 @@
-package condition;
+package state.states;
 
-public class SoldState implements State {
+import state.GumballMachine;
+
+public class WinnerState implements State {
 	GumballMachine gumballMachine;
-	
-	public SoldState(GumballMachine gumballMachine){
+
+	public WinnerState (GumballMachine gumballMachine){
 		this.gumballMachine = gumballMachine;
 	}
 	
@@ -27,16 +29,22 @@ public class SoldState implements State {
 
 	
 	public void dispense() {
+		System.out.println("You are winner!");
 		gumballMachine.releaseBall();
 		
-		if (gumballMachine.getCount() > 0){
-			gumballMachine.setState(gumballMachine.getNoQuarterState());
-			
-		} else {
-			System.out.println("oops, out of gumballs!");
+		if (gumballMachine.getCount() == 0){
 			gumballMachine.setState(gumballMachine.getSoldOutState());
+		} else {
+			gumballMachine.releaseBall();
+			
+			if (gumballMachine.getCount() > 0){
+				gumballMachine.setState(gumballMachine.getNoQuarterState());
+				
+			} else {
+				System.out.println("oops, out of gumballs!");
+				gumballMachine.setState(gumballMachine.getSoldOutState());
+			}
 		}
-
 	}
 
 }

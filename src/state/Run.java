@@ -1,4 +1,4 @@
-package condition;
+package state;
 
 public class Run {
 
@@ -17,6 +17,7 @@ public class Run {
 		gm.turnCrank();
 		
 		gm.insertQuarter();
+		gm.turnCrank();
 		gm.turnCrank();
 		
 

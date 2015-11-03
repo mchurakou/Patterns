@@ -1,4 +1,6 @@
-package condition;
+package state.states;
+
+import state.GumballMachine;
 
 public class NoQuarterState implements State {
 	GumballMachine gumballMachine;
@@ -9,7 +11,7 @@ public class NoQuarterState implements State {
 
 	public void insertQuarter() {
 		gumballMachine.setState(gumballMachine.getHasQuarterState());
-		System.out.println("You inserted a qyarter");
+		System.out.println("You inserted a quarter");
 
 	}
 

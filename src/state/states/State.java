@@ -1,4 +1,4 @@
-package condition;
+package state.states;
 
 public interface State {
 	public void insertQuarter();

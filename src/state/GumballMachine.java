@@ -1,4 +1,6 @@
-package condition;
+package state;
+
+import state.states.*;
 
 public class GumballMachine {
 		
@@ -42,7 +44,7 @@ public class GumballMachine {
 		
 	}
 	
-	void releaseBall(){
+	public void releaseBall(){
 		System.out.println("The gumball comes rolling out the slot");
 		if (count != 0)
 			count--;
