@@ -1,5 +1,8 @@
 package proxy.defender;
 
+import proxy.defender.handler.NonOwnerInvocationHandler;
+import proxy.defender.handler.OwnerInvocationHandler;
+
 import java.lang.reflect.Proxy;
 
 public class Factory {

@@ -1,7 +1,6 @@
-package proxy;
+package proxy.rmi.gumble.server;
 
 import java.rmi.Naming;
-import java.rmi.RemoteException;
 
 public class GumballMachineTestDrive {
 	public static void main(String[] args)  {

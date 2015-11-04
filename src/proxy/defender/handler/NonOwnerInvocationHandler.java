@@ -1,4 +1,6 @@
-package proxy.defender;
+package proxy.defender.handler;
+
+import proxy.defender.PersonBean;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.InvocationTargetException;

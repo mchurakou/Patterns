@@ -1,4 +1,6 @@
-package proxy;
+package proxy.rmi.gumble.server.state;
+
+import proxy.rmi.gumble.server.GumballMachine;
 
 public class NoQuarterState implements State {
 	transient GumballMachine gumballMachine;

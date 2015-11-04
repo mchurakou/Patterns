@@ -12,8 +12,9 @@ public class Run {
 		
 		PersonBean n = Factory.getNonOwnerProxy(new PersonBeanImpl());
 		
-		o.setRating(2);
-		n.setInterests("2");
+		n.setRating(2);
+		o.setInterests("2");
+
 	}
 
 }

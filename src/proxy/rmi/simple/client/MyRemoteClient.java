@@ -1,4 +1,6 @@
-package proxy;
+package proxy.rmi.simple.client;
+
+import proxy.rmi.simple.server.MyRemote;
 
 import java.rmi.Naming;
 

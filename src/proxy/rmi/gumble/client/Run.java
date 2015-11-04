@@ -1,8 +1,8 @@
-package proxy;
+package proxy.rmi.gumble.client;
 
-import java.net.MalformedURLException;
+import proxy.rmi.gumble.server.GumballMachineRemote;
+
 import java.rmi.Naming;
-import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 
 public class Run {

@@ -1,4 +1,6 @@
-package proxy;
+package proxy.rmi.gumble.client;
+
+import proxy.rmi.gumble.server.GumballMachineRemote;
 
 import java.rmi.RemoteException;
 

@@ -1,4 +1,6 @@
-package proxy;
+package proxy.rmi.gumble.server;
+
+import proxy.rmi.gumble.server.state.*;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
@@ -51,7 +53,7 @@ public class GumballMachine extends UnicastRemoteObject implements GumballMachin
 		
 	}
 	
-	void releaseBall(){
+	public void releaseBall(){
 		System.out.println("The gumball comes rolling out the slot");
 		if (count != 0)
 			count--;
@@ -99,6 +101,7 @@ public class GumballMachine extends UnicastRemoteObject implements GumballMachin
 		this.soldState = soldState;
 	}
 
+	@Override
 	public State getState() {
 		return state;
 	}

@@ -46,7 +46,7 @@ public class PersonBeanImpl implements PersonBean {
 
 	@Override
 	public void setRating(int rating) {
-		this.rating = rating;
+		this.rating += rating;
 		ratingCount++;
 
 	}
