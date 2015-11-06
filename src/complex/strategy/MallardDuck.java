@@ -1,15 +1,17 @@
-package complex;
+package complex.strategy;
 
-public class RubberDuck implements Quackable {
+import complex.observer.Observable;
+import complex.observer.Observer;
 
-Observable observable;
+public class MallardDuck implements Quackable {
+	Observable observable;
 	
-	public RubberDuck(){
+	public MallardDuck(){
 		observable = new Observable (this);
 	}
 	
 	public void quack() {
-		System.out.println("Squack");
+		System.out.println("Quack");
 		notifyObservers();
 
 	}
@@ -24,6 +26,6 @@ Observable observable;
 	public void notifyObservers() {
 		observable.notifyObservers();
 		
-	}	
+	}
 
 }

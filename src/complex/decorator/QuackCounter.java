@@ -1,6 +1,9 @@
-package complex;
+package complex.decorator;
 
-public class QuackCounter implements Quackable{
+import complex.observer.Observer;
+import complex.strategy.Quackable;
+
+public class QuackCounter implements Quackable {
 	Quackable duck;
 	static int numberOfQuacks;
 	

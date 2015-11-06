@@ -1,4 +1,6 @@
-package complex;
+package complex.abstract_factory;
+
+import complex.strategy.Quackable;
 
 public abstract class AbstractDuckFactory {
 	public abstract Quackable createMallardDuck();

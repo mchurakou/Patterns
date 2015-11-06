@@ -1,22 +1,19 @@
-package complex;
+package complex.strategy;
 
-public class GooseAdapter implements Quackable {
-	Goose goose;
+import complex.observer.Observable;
+import complex.observer.Observer;
+
+public class RedHeadDuck implements Quackable {
+
 	
 	Observable observable;
 	
-	public GooseAdapter(){
+	public RedHeadDuck(){
 		observable = new Observable (this);
 	}
 	
-	public GooseAdapter(Goose goose){
-		this.goose = goose;
-	}
-
-	
-
 	public void quack() {
-		goose.honk();
+		System.out.println("Quack");
 		notifyObservers();
 
 	}
@@ -27,13 +24,10 @@ public class GooseAdapter implements Quackable {
 		
 	}
 
-	
+	@Override
 	public void notifyObservers() {
 		observable.notifyObservers();
 		
 	}	
-	
 
-
-	
 }

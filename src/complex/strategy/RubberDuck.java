@@ -1,16 +1,18 @@
-package complex;
+package complex.strategy;
 
-public class RedHeadDuck implements Quackable {
+import complex.observer.Observable;
+import complex.observer.Observer;
 
+public class RubberDuck implements Quackable {
+
+Observable observable;
 	
-	Observable observable;
-	
-	public RedHeadDuck(){
+	public RubberDuck(){
 		observable = new Observable (this);
 	}
 	
 	public void quack() {
-		System.out.println("Quack");
+		System.out.println("Squack");
 		notifyObservers();
 
 	}

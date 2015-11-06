@@ -1,11 +1,14 @@
-package complex;
+package complex.composite;
+
+import complex.observer.Observer;
+import complex.strategy.Quackable;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
 public class Flock implements Quackable {
-	List<Quackable> quackers = new ArrayList<Quackable>();
+	List<Quackable> quackers = new ArrayList<>();
 
 	public void add(Quackable quacker){
 		quackers.add(quacker);

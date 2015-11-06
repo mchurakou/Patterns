@@ -1,7 +1,4 @@
-package complex;
-
-
-
+package complex.observer;
 
 
 public interface QuackObservable {

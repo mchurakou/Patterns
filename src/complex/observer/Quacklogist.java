@@ -1,4 +1,4 @@
-package complex;
+package complex.observer;
 
 public class Quacklogist implements Observer {
 

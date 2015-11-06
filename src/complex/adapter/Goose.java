@@ -1,4 +1,4 @@
-package complex;
+package complex.adapter;
 
 public class Goose {
 	public void honk(){
