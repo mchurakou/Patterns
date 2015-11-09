@@ -1,4 +1,4 @@
-package bridge;
+package bridge.implementation;
 
 public abstract class TV {
 	public abstract void on();

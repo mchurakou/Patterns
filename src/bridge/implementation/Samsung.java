@@ -1,4 +1,6 @@
-package bridge;
+package bridge.implementation;
+
+import bridge.implementation.TV;
 
 public class Samsung extends TV {
 

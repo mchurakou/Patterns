@@ -1,4 +1,4 @@
-package bridge;
+package bridge.implementation;
 
 public class Sony extends TV {
 

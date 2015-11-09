@@ -1,4 +1,6 @@
-package bridge;
+package bridge.abstraction;
+
+import bridge.implementation.TV;
 
 public abstract class RemoteControl {
 	public TV implementor;
