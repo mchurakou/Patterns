@@ -1,18 +1,12 @@
 package builder;
 
+/**
+ * Created by mikalai on 10.11.2015.
+ */
 public class Run {
+    public static void main(String[] args) {
+        NutritionFacts cocaCola = (new NutritionFacts.Builder(240, 8)).calories(100).sodium(35).carbohydrate(27).build();
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		AbstractBuilder ab = new StrBuilder();
-		ab.step1();
-		ab.step2();
-		ab.step3();
-		
-		System.out.println(ab.getResult());
-
-	}
-
+        System.out.println(cocaCola);
+    }
 }
