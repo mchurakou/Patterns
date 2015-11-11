@@ -6,8 +6,13 @@ public class Run {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		Handler h = new FirstHandler(new SecondHandler());
-		h.handle("Spadm is");
+		Handler trim = new TrimHandler();
+		Handler upper = new UpperHandler();
+		SoutHandler sout = new SoutHandler();
+
+		trim.setNextHandler(upper).setNextHandler(sout);
+
+		trim.handle("  Spam is   ");
 
 	}
 
