@@ -1,4 +1,4 @@
-package light_weight;
+package flyweight.tree;
 
 public class Tree {
 	static void display(int x, int y){

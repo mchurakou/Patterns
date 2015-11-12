@@ -1,4 +1,4 @@
-package light_weight;
+package flyweight.tree;
 
 public class Run {
 
